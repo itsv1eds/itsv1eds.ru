@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 #breaker{
-    height: 50vh;
-    width: 200%;
+    height: 500vh;
+    width: 500%;
     background-color: #c70039;
     opacity: 1;
     animation: breakeranimate 2s linear;
@@ -27,8 +27,8 @@
     100%{ transform : translateX(-170%) }
 }
 #breaker-two{
-    height: 50vh;
-    width: 200%;
+    height: 500vh;
+    width: 500%;
     background-color: #080808;
     opacity: 1;
     animation: breakeranimatetwo 2s linear;

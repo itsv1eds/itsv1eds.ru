@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -8,11 +8,11 @@
 }
 ::-webkit-scrollbar{
     width: 4px;
-    color:#c70039;
+    color:#FFFFFF;
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #c70039; 
+    background: #FFFFFF; 
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
@@ -44,7 +44,7 @@ input[type=number] {
       height:100vh;
       position: fixed;
       z-index:100;
-      font-family: poppins;
+      font-family: Montserrat;
       background-color: #202020;
       color: whitesmoke;
       font-size: 70px;
@@ -58,7 +58,6 @@ body{
     background: #171717;
 }
 #header{
-    background:#171717;
     height: 100vh;
     width: 100%;;
     overflow: hidden;
@@ -238,7 +237,7 @@ body{
     align-items: center;
     justify-content: center;
     color: whitesmoke;
-    font-family: raleway;
+    font-family: Raleway;
     font-weight: 400;
     letter-spacing: 1px;
     flex-direction: column;
@@ -256,7 +255,7 @@ body{
 .header-content .firstline{
     z-index: 2;
     font-weight:700;
-    font-family: poppins;
+    font-family: Montserrat;
     font-size: 65px;
 }
 .header-content .secondline{
@@ -320,7 +319,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family:poppins;
+    font-family:Montserrat;
 }
 .navigation-links a{
     padding:10px;
@@ -385,7 +384,7 @@ body{
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #c70039;
+    background-color: #FFFFFF;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -405,7 +404,7 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #c70039;
+    color: #FFFFFF;
     transition: all .4s ease;
 }
 #about{
@@ -448,7 +447,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: Raleway;
     color: whitesmoke;
     padding:10px;
     padding-bottom: 30px;
@@ -459,7 +458,7 @@ body{
     color: whitesmoke;
     justify-content: center;
     font-size: 20px;
-    font-family: poppins;
+    font-family: Montserrat;
     width: 50%;
     padding: 30px;
     font-weight: 400;
@@ -507,7 +506,7 @@ body{
     font-family: aileron;
     font-weight: 400;
     font-size: 35px;
-    color: #c70039;
+    color: #FFFFFF;
     transition: all .4s ease;
 }
 .cv {
@@ -518,7 +517,7 @@ body{
     border:none;
     padding: 15px 30px;
     color: whitesmoke;
-    background: #c70039;
+    background: #FFFFFF;
     outline: none;
     font-size:20px;
     font-family: aileron;
@@ -544,7 +543,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: Raleway;
     color: whitesmoke;
     padding:10px;
     padding-bottom: 30px;
@@ -594,17 +593,17 @@ body{
     margin: 20px;
     border-radius: 30%;
     padding: 10px;
-    border: 0px solid #c70039;
-    background: #c70039;
-    box-shadow:0px 0px 0px 0px #c70039 ;
+    border: 0px solid #FFFFFF;
+    background: #FFFFFF;
+    box-shadow:0px 0px 0px 0px #FFFFFF ;
     height:100px;
     transition: all .8s ease;
 }
 .service:hover .service-img img{
-    box-shadow:0px 0px 0px 400px #c70039 ;
+    box-shadow:0px 0px 0px 400px #FFFFFF ;
 }
 .service-description{
-    font-family: poppins;
+    font-family: Montserrat;
     color:whitesmoke;
     position: relative;
     display: inline-block;
@@ -633,7 +632,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: Raleway;
     color: whitesmoke;
     padding:10px;
     padding-bottom: 30px;
@@ -651,7 +650,7 @@ body{
     width: 45%;
     padding: 0%;
     position: relative;
-    font-family: poppins;
+    font-family: Montserrat;
     color:whitesmoke;
     display: inline-block;
     padding:1.5%;
@@ -687,7 +686,7 @@ body{
     transition: all .4s ease;
     width:95%;
     border-radius: 10px;
-    background: #c70039;
+    background: #FFFFFF;
 }
 .js-progress{
     position: absolute;
@@ -696,12 +695,12 @@ body{
     height: 80%;
     display: flex;
     align-items: center;
-    font-family: poppins;
+    font-family: Montserrat;
     justify-content: center;
     transition: all .4s ease;
     width:90%;
     border-radius: 10px;
-    background: #c70039;
+    background: #FFFFFF;
 }
 .adobe-progress{
     position: absolute;
@@ -714,7 +713,7 @@ body{
     transition: all .4s ease;
     width:83%;
     border-radius: 10px;
-    background: #c70039;
+    background: #FFFFFF;
 }
 .php-progress{
     position: absolute;
@@ -726,7 +725,7 @@ body{
     justify-content: center;
     width:85%;
     border-radius: 10px;
-    background: #c70039;
+    background: #FFFFFF;
     transition: all .4s ease;
 }
 .jquery-progress{
@@ -740,7 +739,7 @@ body{
     transition: all .4s ease;
     width:94%;
     border-radius: 10px;
-    background: #c70039;
+    background: #FFFFFF;
 }
 .seo-progress{
     position: absolute;
@@ -753,7 +752,7 @@ body{
     width:84%;
     border-radius: 10px;
     transition: all .4s ease;
-    background: #c70039;
+    background: #FFFFFF;
 }
 .portfolio-header{
     height: auto;
@@ -762,7 +761,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: Raleway;
     transition: all .4s ease;
     color: whitesmoke;
     padding:10px;
@@ -775,7 +774,7 @@ body{
     opacity:.8;
     display: block;
     font-size: 20px;
-    font-family: raleway;
+    font-family: Raleway;
     padding: 8px;
     padding-top: 15px;
     color: whitesmoke;
@@ -809,31 +808,31 @@ padding-bottom: 40px;
 
 .portfolio-text h2{
     font-size: 35px;
-    font-family: poppins;
+    font-family: Montserrat;
     font-weight: 200;
     padding: 20px;
-    color: #c70039;
+    color: #FFFFFF;
     transition: all .4s ease;
 }
 .portfolio-text p{
     font-size: 16px;
     opacity: .8;
-    font-family: poppins;
+    font-family: Montserrat;
     font-weight: 200;
     padding: 20px;
 }
 .portfolio-text button{
     font-size: 16px;
     opacity: .8;
-    font-family: poppins;
+    font-family: Montserrat;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#c70039;
+    color:#FFFFFF;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #c70039;
+    border: 1.5px solid #FFFFFF;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -848,7 +847,7 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #c70039;
+    background: #FFFFFF;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
@@ -879,7 +878,7 @@ padding-bottom: 40px;
     content: "";
     height: 100%;
     width: 100%;
-    background: #c70039;
+    background: #FFFFFF;
     opacity: .1;
     top: 0;
     left: 0;
@@ -910,7 +909,7 @@ padding-bottom: 40px;
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: Raleway;
     color: whitesmoke;
     padding:10px;
     padding-bottom: 30px;
@@ -980,12 +979,12 @@ padding-bottom: 40px;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #c70039;
+    background: #FFFFFF;
     color: whitesmoke;
     font-size: 18px;
     text-align: center;
     font-weight: 400;
-    font-family: poppins;
+    font-family: Montserrat;
     padding: 3px;
     transition: all .4s ease;
     width: 25%;
@@ -1001,7 +1000,7 @@ padding-bottom: 40px;
   width: 100%;
   text-align: center;
   vertical-align: center;
-  font-family: poppins;
+  font-family: Montserrat;
   color: whitesmoke;
   background-color: #050505;
   transition: all .5s ease;
@@ -1046,7 +1045,7 @@ padding-bottom: 40px;
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: Raleway;
     color: whitesmoke;
     padding:10px;
     padding-bottom: 30px;
@@ -1057,7 +1056,7 @@ padding-bottom: 40px;
     padding: 10px;
     color: whitesmoke;
     opacity: .9;
-    font-family:raleway;
+    font-family:Raleway;
     font-size: 18px;
 }
 .contact-content{
@@ -1123,12 +1122,12 @@ form{
     background: #050505;
     border:none;
     color: whitesmoke;
-    font-family: poppins;
+    font-family: Montserrat;
     font-size: 18px;
 }
 .form-header{
     font-size: 24px;
-    font-family: poppins;
+    font-family: Montserrat;
     font-weight: 400;
     color: whitesmoke;
     padding: 28px;
@@ -1142,7 +1141,7 @@ form{
     background: #050505;
     border:none;
     color: whitesmoke;
-    font-family: poppins;
+    font-family: Montserrat;
     font-size: 18px;
 }
 .input-textarea{
@@ -1155,12 +1154,12 @@ form{
     background: #050505;
     border:none;
     color: whitesmoke;
-    font-family: poppins;
+    font-family: Montserrat;
     font-size: 18px;
 }
 form button{
     padding:8px 24px;
-    font-family: poppins;
+    font-family: Montserrat;
     font-size:20px;
     color: whitesmoke;
     background:#BB0035;
@@ -1178,7 +1177,7 @@ form button:hover{
     position: relative;
     z-index: 2;
     font-size: 24px;
-    font-family: poppins;
+    font-family: Montserrat;
     font-weight: 400;
     color: whitesmoke;
     padding: 30px;
@@ -1197,7 +1196,7 @@ form button:hover{
 .contact-info-icon-text{
     color: whitesmoke;
     padding:15px;
-    font-family: poppins;
+    font-family: Montserrat;
 }
 .contact-info-icon-text h6{
     font-size: 15px;
@@ -1219,7 +1218,7 @@ form button:hover{
     color: whitesmoke;
     display: flex;
     flex-direction: row;
-    font-family: poppins;
+    font-family: Montserrat;
     align-items: center;
     justify-content: center;
 }
@@ -1288,7 +1287,7 @@ form button:hover{
     width: 100%;
 }
 .color-red{
-    background: #c70039;
+    background: #FFFFFF;
 }
 .color-purple{
     background: #481380;
@@ -1300,7 +1299,7 @@ form button:hover{
     background: #035aa6;
 }
 .color-malt{
-    background: #00909e;
+    background: #FFFFFF;
 }
 .color-orange{
     background: #dd7631;
@@ -1326,7 +1325,7 @@ form button:hover{
     width:150px;
     padding: 10px;
     background: whitesmoke;
-    font-family: poppins;
+    font-family: Montserrat;
     font-size: 16px;
     display: flex;
     color: black;
@@ -1359,7 +1358,7 @@ For devices with smaller width like mobile phone
         justify-content: center;
         flex-direction: column;
         color: whitesmoke;
-        font-family: raleway;
+        font-family: Raleway;
         font-weight: 500;
         letter-spacing: 2px;
         font-size: 40px;
@@ -1395,7 +1394,7 @@ For devices with smaller width like mobile phone
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #c70039;
+        background-color: #FFFFFF;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1436,7 +1435,7 @@ For devices with smaller width like mobile phone
 
         justify-content: center;
         font-size: 35px;
-        font-family: raleway;
+        font-family: Raleway;
         padding:10px;
         font-weight: 900;
     }
@@ -1444,7 +1443,7 @@ For devices with smaller width like mobile phone
         color: whitesmoke;
         justify-content: center;
         font-size: 20px;
-        font-family: poppins;
+        font-family: Montserrat;
         width: 95%;
         padding: 10px;
         font-weight: 400;
@@ -1548,14 +1547,14 @@ For devices with smaller width like mobile phone
         }
             .portfolio-text h2{
                 font-size: 22px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 200;
                 padding: 10px;
             }
             .portfolio-text p{
                 font-size: 15px;
                 opacity: .8;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 200;
                 padding: 15px;
             }
@@ -1563,7 +1562,7 @@ For devices with smaller width like mobile phone
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #c70039 ;
+                box-shadow:0px 0px 0px 0px #FFFFFF ;
             }
             .portfolio-image img{
                 height: 300px;
@@ -1605,7 +1604,7 @@ For devices with smaller width like mobile phone
                 font-size: 18px;
                 text-align: center;
                 font-weight: 400;
-                font-family: poppins;
+                font-family: Montserrat;
                 padding: 3px;
                 width: 35%;
                 height: auto;
@@ -1620,7 +1619,7 @@ For devices with smaller width like mobile phone
               width: 100%;
               text-align: center;
               vertical-align: center;
-              font-family: poppins;
+              font-family: Montserrat;
               color: whitesmoke;
               background-color: #000000;
               transition: all .5s ease;
@@ -1709,12 +1708,12 @@ For devices with smaller width like mobile phone
                 background: #050505;
                 border:none;
                 color: whitesmoke;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size: 16px;
             }
             .form-header{
                 font-size: 22px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 400;
                 color: whitesmoke;
                 padding: 20px;
@@ -1729,7 +1728,7 @@ For devices with smaller width like mobile phone
                 background: #050505;
                 border:none;
                 color: whitesmoke;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size: 16px;
             }
             .input-textarea{
@@ -1742,12 +1741,12 @@ For devices with smaller width like mobile phone
                 background: #050505;
                 border:none;
                 color: whitesmoke;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size: 16px;
             }
             form button{
                 padding:8px 24px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size:20px;
                 color: whitesmoke;
                 opacity: .8;
@@ -1764,7 +1763,7 @@ For devices with smaller width like mobile phone
                 position: relative;
                 z-index: 2;
                 font-size: 24px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 400;
                 color: whitesmoke;
                 padding: 20px;
@@ -1783,7 +1782,7 @@ For devices with smaller width like mobile phone
             .contact-info-icon-text{
                 color: whitesmoke;
                 padding:15px;
-                font-family: poppins;
+                font-family: Montserrat;
             }
             .contact-info-icon-text h6{
                 font-size: 15px;
@@ -1817,7 +1816,7 @@ for tabs and large phones
         justify-content: center;
         flex-direction: column;
         color: whitesmoke;
-        font-family: raleway;
+        font-family: Raleway;
         font-weight: 500;
         letter-spacing: 2px;
         font-size: 40px;
@@ -1850,7 +1849,7 @@ for tabs and large phones
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #c70039;
+        background-color: #FFFFFF;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1890,7 +1889,7 @@ for tabs and large phones
         color: whitesmoke;
         justify-content: center;
         font-size: 45px;
-        font-family: raleway;
+        font-family: Raleway;
         padding:15px;
         font-weight: 900;
     }
@@ -1898,7 +1897,7 @@ for tabs and large phones
         color: whitesmoke;
         justify-content: center;
         font-size: 40px;
-        font-family: poppins;
+        font-family: Montserrat;
         width: 95%;
         padding: 25px;
         font-weight: 400;
@@ -2019,14 +2018,14 @@ for tabs and large phones
         }
             .portfolio-text h2{
                 font-size: 35px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 200;
                 padding: 15px;
             }
             .portfolio-text p{
                 font-size: 20px;
                 opacity: .8;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 200;
                 padding: 15px;
             }
@@ -2034,7 +2033,7 @@ for tabs and large phones
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #c70039 ;
+                box-shadow:0px 0px 0px 0px #FFFFFF ;
             }
             .portfolio-image img{
                 height: 380px;
@@ -2076,7 +2075,7 @@ for tabs and large phones
                 font-size: 18px;
                 text-align: center;
                 font-weight: 400;
-                font-family: poppins;
+                font-family: Montserrat;
                 padding: 3px;
                 width: 35%;
                 height: auto;
@@ -2091,7 +2090,7 @@ for tabs and large phones
               width: 100%;
               text-align: center;
               vertical-align: center;
-              font-family: poppins;
+              font-family: Montserrat;
               color: whitesmoke;
               background-color: #050505;
               padding: 10px;
@@ -2181,12 +2180,12 @@ for tabs and large phones
                 background: #050505;
                 border:none;
                 color: whitesmoke;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size: 16px;
             }
             .form-header{
                 font-size: 22px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 400;
                 color: whitesmoke;
                 padding: 20px;
@@ -2201,7 +2200,7 @@ for tabs and large phones
                 background: #050505;
                 border:none;
                 color: whitesmoke;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size: 16px;
             }
             .input-textarea{
@@ -2214,12 +2213,12 @@ for tabs and large phones
                 background: #050505;
                 border:none;
                 color: whitesmoke;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size: 16px;
             }
             form button{
                 padding:8px 24px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-size:20px;
                 color: whitesmoke;
                 opacity: .8;
@@ -2236,7 +2235,7 @@ for tabs and large phones
                 position: relative;
                 z-index: 2;
                 font-size: 24px;
-                font-family: poppins;
+                font-family: Montserrat;
                 font-weight: 400;
                 color: whitesmoke;
                 padding: 20px;
@@ -2384,7 +2383,7 @@ for tabs and large phones
         font-size: 18px;
         text-align: center;
         font-weight: 400;
-        font-family: poppins;
+        font-family: Montserrat;
         padding: 3px;
         width: 25%;
         height: auto;
@@ -2399,7 +2398,7 @@ for tabs and large phones
       width: 100%;
       text-align: center;
       vertical-align: center;
-      font-family: poppins;
+      font-family: Montserrat;
       color: whitesmoke;
       background-color: #050505;
       transition: all .5s ease;
@@ -2432,7 +2431,7 @@ for tabs and large phones
         align-items: center;
         justify-content: center;
         font-size: 45px;
-        font-family: raleway;
+        font-family: Raleway;
         color: whitesmoke;
         padding:10px;
         padding-bottom: 30px;
@@ -2443,7 +2442,7 @@ for tabs and large phones
         padding: 10px;
         color: whitesmoke;
         opacity: .9;
-        font-family:raleway;
+        font-family:Raleway;
         font-size: 18px;
     }
     .contact-content{
@@ -2507,12 +2506,12 @@ for tabs and large phones
         background: #050505;
         border:none;
         color: whitesmoke;
-        font-family: poppins;
+        font-family: Montserrat;
         font-size: 18px;
     }
     .form-header{
         font-size: 24px;
-        font-family: poppins;
+        font-family: Montserrat;
         font-weight: 400;
         color: whitesmoke;
         padding: 20px;
@@ -2527,7 +2526,7 @@ for tabs and large phones
         background: #050505;
         border:none;
         color: whitesmoke;
-        font-family: poppins;
+        font-family: Montserrat;
         font-size: 18px;
     }
     .input-textarea{
@@ -2540,12 +2539,12 @@ for tabs and large phones
         background: #050505;
         border:none;
         color: whitesmoke;
-        font-family: poppins;
+        font-family: Montserrat;
         font-size: 18px;
     }
     form button{
         padding:8px 24px;
-        font-family: poppins;
+        font-family: Montserrat;
         font-size:20px;
         color: whitesmoke;
         opacity: .8;

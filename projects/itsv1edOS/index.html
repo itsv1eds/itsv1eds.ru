@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>itsv1edOS - Modification for Mi Band 3</title>
+	<link rel="shortcut icon" href="https://render.namemc.com/skin/2d/face.png?skin=1ddceab6ca576bd6&amp;overlay&amp;scale=2">
+	<link rel="stylesheet" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+    body {
+      margin: 0;
+    }
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* фоновый цвет */
+      background: #F5F5F5;
+      z-index: 1001;
+    }
+
+    .preloader__image {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin-top: -35px;
+      margin-left: -35px;
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Прелоадер -->
+  <div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+</body>
+<figcaption>
+<style>
+   .fig {
+    display: block; 
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 5px; 
+    color: #212121;
+   }
+  </style>
+   <script>
+    document.createElement('figure');
+    document.createElement('figcaption');
+   </script>
+ </head>
+ <body>
+  <figure class="fig">
+  <head>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <style>
+      body {
+        font-family: 'Comfortaa', serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="font-weight-bold"><strong>itsv1edOS</strong></h2>
+  </body>
+</html>
+<div class="inner gsregular" "mastfoot mt-auto small">
+<a href="//4pda.ru/forum/index.php?showtopic=905630&st=8720#entry84947262" class="text-muted"> Modification for Mi Band 3, based on Qexx
+<p></p>
+<h1><a><img src="images/miband3.png"alt="Preview" width="330" height="350"></h1></a>
+</div>
+<a class="btn btn-light btn-lg" href="/" role="button">Home</a>
+  <a class="btn btn-light btn-lg" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Description</a>
+  <button class="btn btn-light btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Download</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+ <h1 class="text-dark" "font-weight-bold"><strong>Changes:</strong></h1>
+ <h5 class="text-dark" "font-weight-bold"><strong>Increase notifications from 5 to 15.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>Time for displaying notifications increased from 4 seconds to 10 seconds.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>Changed a bunch of icons, added new emoticons to the font, animation changed.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>Forced Russian with improvement.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>The version is overpriced to 9.9.9.9, so that MiFit does not fly off.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>Screen backlight time in all modes 4 seconds.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>Alarm clock time increased to 30 seconds.</strong></h5>
+ <h5 class="text-dark" "font-weight-bold"><strong>The connection icon (Bluetooth) now works as an indicator of the connection with the smartphone (it is not shown when disconnected).</strong></h5>
+ <p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+<h1 class="text-dark" "font-weight-bold"><strong>Download:</strong></h1>
+  <p>
+<a href="files/B1edWuhan9.3.0.28.fw"><img src="images/nonfc-.png" width="125" height="38" alt="Modification for no nfc without vibro">
+<a href="files/B1edWuhan9.3.0.28Vibro.fw"><img src="images/nonfc+.png" width="125" height="38" alt="Modification for no nfc with vibro">
+<a href="files/B1edChongqing9.0.7.16.fw"><img src="images/nfc-.png" width="125" height="38" alt="Modification for nfc without vibro">
+<a href="files/B1edChongqing9.0.7.16Vibro.fw"><img src="images/nfc+.png" width="125" height="38" alt="Modification for nfc with vibro">
+ </p></a>
+<p>
+<a href="files/B1edRes.res"><img src="images/res.png" width="125" height="38" alt="Modification resourse for firmware">
+<a href="files/BOLDv4c(B1edMod)"><img src="images/ft.png" width="125" height="38" alt="Modification font with emoticons">
+ </p></a>
+<h2> <a href="https://www.youtube.com/watch?v=Dkct0pktlto" class="text-muted">Video-instruction </a></h2>
+<h3>A short instruction, flash first .fw, then .res, and later .ft</h4>
+<h4>NoNFC- - Modification for no nfc without vibro </h4>
+<h4>NoNFC+ - Modification for no nfc with vibro </h4>
+<h4>NFC- - Modification for nfc without vibro </h4>
+<h4>NFC+ - Modification for nfc with vibro </h4>
+<h4>res - Resourse </h4>
+<h4>ft - Font with emoticons </h4>
+      </div>
+    </div>
+  </div>
+</div>
+ <footer class="mastfoot mt-auto small">
+<div class="inner gsregular">
+<a href="/openme" "class="text-muted"> itsv1eds | v1eds | виедс | вий </a> • Copyright © 2019-2021
+<p></p>
+</div>
+</footer>
+ <style type="text/css">
+    body{background: #F5F5F5; color: #212121}
+    a{color: #444444}
+    a:hover{color: #FF7043;text-decoration: none;
+    }
+
+    h1, p
+    {
+      color: #212121;
+    }
+
+    .brand-text {
+      fill: #333;
+    }
+    .brand-main {
+      fill: #FF7043;
+    }
+    .nav-masthead .nav-link {
+      font-weight: 500;
+      color: #9E9E9E;
+      border-color: transparent;
+    }
+
+    .nav-masthead .active {
+      color: #212121;
+      border-bottom-color: #212121;
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+      color: #FF7043;
+      border-bottom-color: #FF7043;
+    }
+
+    .carousel-indicators li {
+      background-color: #212121;
+      opacity: .5;
+    }
+
+    .dropdown-menu {
+      color: #212121;
+      background-color: #EEEEEE;
+    }
+
+    .dropdown-item {
+      color: #212121;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+      color: #212121;
+      background-color: rgba(255,112,67 ,0.5);
+    }
+
+    .dropdown-item.active, .dropdown-item:active {
+      color: #212121;
+      background-color: #FF7043;
+    }
+
+    .dropdown-item.disabled, .dropdown-item:disabled {
+      color: #9E9E9E;
+    }
+    }
+   </figcaption>
+  </figure>
+ </body>
+</html>
+ 
