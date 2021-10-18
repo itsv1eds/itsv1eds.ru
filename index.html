@@ -2,225 +2,72 @@
 <!-- why? ладно, это начало -->
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="Хей, привет там! Я виедс, или же itsv1eds и это мой сайт!" name="description">
 	<title>itsv1eds</title>
-	<link rel="shortcut icon" href="https://render.namemc.com/skin/2d/face.png?skin=1ddceab6ca576bd6&amp;overlay&amp;scale=2">
-<link rel="stylesheet" href="main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="js/konami.js"></script>
- <!-- Настройки прелоадера -->
- <style>
-    body {
-      margin: 0;
-    }
+	<link href="https://render.namemc.com/skin/2d/face.png?skin=d8d5612a1058dfc0&overlay&scale=2" rel="shortcut icon">
+	<link href="main.css" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+	</script>
+	<script src="js/konami.js">
+	</script><!-- Настройки прелоадера -->
 
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      /* фоновый цвет */
-      background: #F5F5F5;
-      z-index: 1001;
-    }
-
-    .preloader__image {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      width: 70px;
-      height: 70px;
-      margin-top: -35px;
-      margin-left: -35px;
-      text-align: center;
-      animation: preloader-rotate 2s infinite linear;
-    }
-
-    @keyframes preloader-rotate {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    .loaded_hiding .preloader {
-      transition: 0.3s opacity;
-      opacity: 0;
-    }
-
-    .loaded .preloader {
-      display: none;
-    }
-  </style>
+	<style>
+	body { margin: 0; } .preloader { position: fixed; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; /* фоновый цвет */ background: #F5F5F5; z-index: 1001; } .preloader__image { position: relative; top: 50%; left: 50%; width: 70px; height: 70px; margin-top: -35px; margin-left: -35px; text-align: center; animation: preloader-rotate 2s infinite linear; } @keyframes preloader-rotate { 100% { transform: rotate(360deg); } } .loaded_hiding .preloader { transition: 0.3s opacity; opacity: 0; } .loaded .preloader { display: none; } 
+	</style>
 </head>
-
 <body>
-
-  <!-- Прелоадер -->
-  <div class="preloader">
-    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-      <path fill="currentColor"
-        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-      </path>
-    </svg>
-  </div>
-  <script>
-    window.onload = function () {
-      document.body.classList.add('loaded_hiding');
-      window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 500);
-    }
-  </script>
-</body>
-<!-- Настройки текста, шрифт -->
-<figcaption>
-<style>
-   .fig {
-    display: block; 
-    text-align: center; 
-    margin-top: 100px;
-    margin-bottom: 0px; 
-    color: #212121;
-   }
-  </style>
-   <script>
-    document.createElement('figure');
-    document.createElement('figcaption');
-   </script>
- </head>
- <body>
-  <figure class="fig">
-  <head>
-    <link rel="stylesheet">
-<!-- Основное -->
-   <h1><a href="Me"><img src="images/виедс.png"width="309.2" height="133.6"alt="About Me"></h1></a>
- <html>
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-    <style>
-      body {
-        font-family: 'Comfortaa', serif;
-        font-size: 13px;
-      }
-    </style>
-  </head>
-  <body>
-</script>
- <div>
-<!-- Часики, только вот нахера
-<script type="text/javascript">  
-			setInterval(function () {  
-			date = new Date(),  
-			h = date.getHours(),  
-			m = date.getMinutes(),  
-			h = (h < 10) ? '0' + h : h,  
-			m = (m < 10) ? '0' + m : m, 
-		document.getElementById('time').innerHTML = h + ':' + m;  
-			}, 1000);
+	<!-- Прелоадер -->
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+		<path d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z" fill="currentColor"></path></svg>
+	</div>
+	<script>
+	window.onload = function () { document.body.classList.add('loaded_hiding'); window.setTimeout(function () { document.body.classList.add('loaded'); document.body.classList.remove('loaded_hiding'); }, 500); } 
+	</script><!-- Настройки текста, шрифт -->
+	<figcaption>
+		<style>
+		.fig { display: block; text-align: center; margin-top: 0px; margin-bottom: 0px; color: #212121; } 
+		</style>
+		<script>
+		document.createElement('figure'); document.createElement('figcaption'); 
 		</script>
-<span style="color:#212121; font-weight:bold; font-size:16pt; padding:5px;">
-<span id="time"></span>
-</span>
-</div>
--->
-  </body>
-</html>
-<p>
- <a href="//t.me/itsv1eds" target="_blank"><img src="images/tg.png" onclick="this.src='images/catotg.png';" onmouseover="this.src='images/ctg.png';" onmouseout="this.src='images/tg.png';" width="48" height="48" alt="Telegram"></a>
- <a href="//vk.com/itsv1eds" target="_blank"><img src="images/vk.png" onclick="this.src='images/vtosters.png';" onmouseover="this.src='images/cvk.png';" onmouseout="this.src='images/vk.png';" width="48" height="48" alt="VK">
- <a href="//instagram.com/itsv1eds" target="_blank"><img src="images/instagram.png" onmouseover="this.src='images/cinstagram.png';" onmouseout="this.src='images/instagram.png';" width="48" height="48" alt="Instagram"></a>
- <a href="//open.spotify.com/user/fk117jdu0sxxrns1khficvlls" target="_blank"><img src="images/spotify.png" onmouseover="this.src='images/cspotify.png';" onmouseout="this.src='images/spotify.png';" width="48" height="48" alt="Spotify">
- <a href="//4pda.ru/forum/index.php?showuser=6283111" target="_blank"><img src="images/4pda.png" onmouseover="this.src='images/c4pda.png';" onmouseout="this.src='images/4pda.png';" width="48" height="48" alt="4PDA"></a>
- <a href="//tiktok.com/@itsv1eds" target="_blank"><img src="images/tiktok.png" onmouseover="this.src='images/ctiktok.png';" onmouseout="this.src='images/tiktok.png';" width="48" height="48" alt="TikTok">
- </p></a>
- <p>
- <a href="/Donate"><img src="images/donate.png" width="125" height="38" alt="you can help me to live in this world ">
- <a href="/Software"><img src="images/software.png" width="125" height="38" alt="best software for your phone and pc"></p></a>
- <p>
- <a href="/itsv1edOS"><img src="images/mb3.png" width="125" height="38" alt="Firmware modification for Mi Band 3">
- <a href="/Pixels"><img src="images/mb4.png" width="125" height="38" alt="Modification Resourse for Mi Band 4">
- </p></a>
- 
- <!-- футер -->
-<footer class="mastfoot mt-auto small">
-<div class="inner gsregular">
-<a href=openme "class="text-muted"> itsv1eds | v1eds | виедс | вий </a> • Copyright © 2019-2021
-<p></p>
-</div>
-</footer>
- </body>
+		<figure class="fig">
+			<link rel="stylesheet">
+			<style type="text/css">
+			.parent { position: relative; top: 0; left: 0;}.image1 { position: relative; top: -50; left: 0;}.image2 { position: absolute; top: -300px; left: -161px;}.image3 { position: absolute; top: -165px; left: -120px;}.image4 { position: absolute; top: -165px; left: -75px;}.image5 { position: absolute; top: -165px; left: -30px;}.image6 { position: absolute; top: -165px; left: 15px;}.image7 { position: absolute; top: -165px; left: 60px;}.image8 { position: absolute; top: -130px; left: -80px;}
+			</style><!-- Основное -->
+			<style>
+			body { display: flex; justify-content: center; align-items: center; min-height: 0vh; background: #282d2d; font: normal 400 130%/1.5 -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}nav { display: grid; grid-auto-flow: column; grid-gap: 1em;}a { position: relative; font-weight: 600; text-decoration: none;
+			</style>
+			<script src="js/script.js">
+			</script>
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+			</style>
+			<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+			<style>
+			body { font-family: 'Comfortaa', serif; font-size: 13px; } 
+			</style>
+			<div class="parent">
+				<img class="image1" height="350" src="images/secret.png" width="330">
+				<h1><a href="me"><img alt="About me" class="image2" height="90.8" src="images/testitsv1eds.png" style="font-family: 'Comfortaa', serif;font-size: 13px;" width="327.4"></a></h1>
+				<div>
+					<style>
+					.thumb img { padding: 7px; /* Расстояние от картинки до рамки */ } 
+					</style>
+					<p class="thumb"><a href="//t.me/itsv1eds" target="_blank"><img alt="Telegram" class="image3" height="48" onmouseout="this.src='images/telegram.svg';" onmouseover="this.src='images/ctelegram.svg';" src="images/telegram.svg" width="48"></a> <a href="//vk.com/itsv1eds" target="_blank"><img alt="VK" class="image4" height="48" onmouseout="this.src='images/vk.svg';" onmouseover="this.src='images/cvk.svg';" src="images/vk.svg" width="48"></a> <a href="//instagram.com/itsv1eds" target="_blank"><img alt="Instagram" class="image5" height="48" onmouseout="this.src='images/instagram.svg';" onmouseover="this.src='images/cinstagram.svg';" src="images/instagram.svg" width="48"></a> <a href="//open.spotify.com/user/fk117jdu0sxxrns1khficvlls" target="_blank"><img alt="Spotify" class="image6" height="48" onmouseout="this.src='images/spotify.svg';" onmouseover="this.src='images/cspotify.svg';" src="images/spotify.svg" width="48"></a> <a href="donate" target="_blank"><img alt="donate" class="image7" height="48" src="images/donate.svg" width="48"></a> <a href="projects"><img alt="my projects" class="image8" height="75" src="images/projects.svg" width="150">
+					<p></p></a></p>
+				</div><!-- настройка фона -->
+				<style>
+				body { background: url('images/1.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;}
+				</style><!--  <style> body { /* Градиент */ background: linear-gradient(#9A5044, #E8D9A9) fixed; } div { width: 70%; /* Ширина */ margin: auto; /* Выравниваем по центру */ } </style> <style type="text/css"> body{background: #F5F5F5; color: #EBEBEB} a{color: #444444} a:hover{color: #FF7043;text-decoration: none; } h1, p { color: #212121; } .brand-text { fill: #333; } .brand-main { fill: #FF7043; } .nav-masthead .nav-link { font-weight: 500; color: #9E9E9E; border-color: transparent; } .nav-masthead .active { color: #212121; border-bottom-color: #212121; } .nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus { color: #FF7043; border-bottom-color: #FF7043; } .carousel-indicators li { background-color: #212121; opacity: .5; } .dropdown-menu { color: #212121; background-color: #EEEEEE; } .dropdown-item { color: #212121; } .dropdown-item:hover, .dropdown-item:focus { color: #212121; background-color: rgba(255,112,67 ,0.5); } .dropdown-item.active, .dropdown-item:active { color: #212121; background-color: #FF7043; } .dropdown-item.disabled, .dropdown-item:disabled { color: #9E9E9E; } }<!== футер <footer class="mastfoot mt-auto small"><div class="inner gsregular"><a href=openme "class="text-muted"> itsv1eds | v1eds | виедс | вий </a> • 2019-2021©<p></p> -->
+			</div>
+		</figure>
+	</figcaption>
 </body>
-</html>
-<!-- настройка фона -->
-<style type="text/css">
-    body{background: #F5F5F5; color: #212121}
-    a{color: #444444}
-    a:hover{color: #FF7043;text-decoration: none;
-    }
-
-    h1, p
-    {
-      color: #212121;
-    }
-
-    .brand-text {
-      fill: #333;
-    }
-    .brand-main {
-      fill: #FF7043;
-    }
-    .nav-masthead .nav-link {
-      font-weight: 500;
-      color: #9E9E9E;
-      border-color: transparent;
-    }
-
-    .nav-masthead .active {
-      color: #212121;
-      border-bottom-color: #212121;
-    }
-
-    .nav-masthead .nav-link:hover,
-    .nav-masthead .nav-link:focus {
-      color: #FF7043;
-      border-bottom-color: #FF7043;
-    }
-
-    .carousel-indicators li {
-      background-color: #212121;
-      opacity: .5;
-    }
-
-    .dropdown-menu {
-      color: #212121;
-      background-color: #EEEEEE;
-    }
-
-    .dropdown-item {
-      color: #212121;
-    }
-
-    .dropdown-item:hover, .dropdown-item:focus {
-      color: #212121;
-      background-color: rgba(255,112,67 ,0.5);
-    }
-
-    .dropdown-item.active, .dropdown-item:active {
-      color: #212121;
-      background-color: #FF7043;
-    }
-
-    .dropdown-item.disabled, .dropdown-item:disabled {
-      color: #9E9E9E;
-    }
-    }
-   </figcaption>
-  </figure>
- </body>
 </html>

@@ -1,0 +1,138 @@
+<html lang="ru"><head><meta charset="UTF-8"><title>itsv1eds anime</title><link rel="shortcut icon" href="https://render.namemc.com/skin/2d/face.png?skin=d8d5612a1058dfc0&overlay&scale=2"><link rel="stylesheet" href="main.css"><meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- Настройки прелоадера --><style> body { margin: 0; } .preloader { position: fixed; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; /* фоновый цвет */ background: #F5F5F5; z-index: 1001; } .preloader__image { position: relative; top: 50%; left: 50%; width: 70px; height: 70px; margin-top: -35px; margin-left: -35px; text-align: center; animation: preloader-rotate 2s infinite linear; } @keyframes preloader-rotate { 100% { transform: rotate(360deg); } } .loaded_hiding .preloader { transition: 0.3s opacity; opacity: 0; } .loaded .preloader { display: none; } </style></head><body> <!-- Прелоадер --> <div class="preloader"> <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"> </path> </svg> </div> <script> window.onload = function () { document.body.classList.add('loaded_hiding'); window.setTimeout(function () { document.body.classList.add('loaded'); document.body.classList.remove('loaded_hiding'); }, 500); } </script></body><!-- Настройки текста, шрифт --><figcaption><style> .fig { display: block; text-align: center; margin-top: 0px; margin-bottom: 0px; color: #212121; } </style> <script> document.createElement('figure'); document.createElement('figcaption'); </script> </head> <body> <figure class="fig"> <head> <link rel="stylesheet"><style type="text/css">.parent { position: relative; top: 0; left: 0;}.image1 { position: relative; top: 0; left: 0;}.image2 { position: absolute; top: -300px; left: -150px;}.image3 { position: absolute; top: -150px; left: -120px;}.image4 { position: absolute; top: -150px; left: -75px;}.image5 { position: absolute; top: -150px; left: -30px;}.image6 { position: absolute; top: -150px; left: 15px;}.image7 { position: absolute; top: -150px; left: 60px;} </style></style><!-- Основное --><style>body { display: flex; justify-content: center; align-items: center; min-height: 0vh; background: #282d2d; font: normal 400 130%/1.5 -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}nav { display: grid; grid-auto-flow: column; grid-gap: 1em;}a { position: relative; font-weight: 600; text-decoration: none;</style> <script src="js/script.js"></script><style>@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');</style> <head> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa"> <style> body { font-family: 'Comfortaa', serif; font-size: 13px; } </style> </head><!-- настройка фона --><style>body { background: url('images/1.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;}</style><body><body><h1 id="header">itsv1eds anime server.</h1><div id="parentDirLinkBox" style="display:none"> <a id="parentDirLink" class="icon up"> <span id="parentDirText">[вернуться на сайт]</span> </a></div><table> <thead> <tr class="header" id="theader"> <th id="nameColumnHeader" tabindex=0 role="button">Тайтл</th> <th id="sizeColumnHeader" class="detailsColumn" tabindex=0 role="button"> Размер </th> <th id="dateColumnHeader" class="detailsColumn" tabindex=0 role="button"> Последнее изменение </th> </tr> </thead> <tbody id="tbody"> </tbody></table>
+<script>
+function addRow(name, url, isdir,
+    size, size_string, date_modified, date_modified_string) {
+  if (name == "." || name == "..")
+    return;
+
+  var root = document.location.pathname;
+  if (root.substr(-1) !== "/")
+    root += "/";
+
+  var tbody = document.getElementById("tbody");
+  var row = document.createElement("tr");
+  var file_cell = document.createElement("td");
+  var link = document.createElement("a");
+
+  link.className = isdir ? "icon dir" : "icon file";
+
+  if (isdir) {
+    name = name + "/";
+    url = url + "/";
+    size = 0;
+    size_string = "";
+  } else {
+    link.draggable = "true";
+    link.addEventListener("dragstart", onDragStart, false);
+  }
+  link.innerText = name;
+  link.href = root + url;
+
+  file_cell.dataset.value = name;
+  file_cell.appendChild(link);
+
+  row.appendChild(file_cell);
+  row.appendChild(createCell(size, size_string));
+  row.appendChild(createCell(date_modified, date_modified_string));
+
+  tbody.appendChild(row);
+}
+
+function onDragStart(e) {
+  var el = e.srcElement;
+  var name = el.innerText.replace(":", "");
+  var download_url_data = "application/octet-stream:" + name + ":" + el.href;
+  e.dataTransfer.setData("DownloadURL", download_url_data);
+  e.dataTransfer.effectAllowed = "copy";
+}
+
+function createCell(value, text) {
+  var cell = document.createElement("td");
+  cell.setAttribute("class", "detailsColumn");
+  cell.dataset.value = value;
+  cell.innerText = text;
+  return cell;
+}
+
+function start(location) {
+  var header = document.getElementById("header");
+  header.innerText = header.innerText.replace("LOCATION", location);
+
+  document.getElementById("title").innerText = header.innerText;
+}
+
+function onHasParentDirectory() {
+  var box = document.getElementById("parentDirLinkBox");
+  box.style.display = "block";
+
+  var root = document.location.pathname;
+  if (!root.endsWith("/"))
+    root += "/";
+
+  var link = document.getElementById("parentDirLink");
+  link.href = root + "..";
+}
+
+function onListingParsingError() {
+  var box = document.getElementById("listingParsingErrorBox");
+  box.innerHTML = box.innerHTML.replace("LOCATION", encodeURI(document.location)
+      + "?raw");
+  box.style.display = "block";
+}
+
+function sortTable(column) {
+  var theader = document.getElementById("theader");
+  var oldOrder = theader.cells[column].dataset.order || '1';
+  oldOrder = parseInt(oldOrder, 10)
+  var newOrder = 0 - oldOrder;
+  theader.cells[column].dataset.order = newOrder;
+
+  var tbody = document.getElementById("tbody");
+  var rows = tbody.rows;
+  var list = [], i;
+  for (i = 0; i < rows.length; i++) {
+    list.push(rows[i]);
+  }
+
+  list.sort(function(row1, row2) {
+    var a = row1.cells[column].dataset.value;
+    var b = row2.cells[column].dataset.value;
+    if (column) {
+      a = parseInt(a, 10);
+      b = parseInt(b, 10);
+      return a > b ? newOrder : a < b ? oldOrder : 0;
+    }
+
+    if (a > b)
+      return newOrder;
+    if (a < b)
+      return oldOrder;
+    return 0;
+  });
+
+  for (i = 0; i < list.length; i++) {
+    tbody.appendChild(list[i]);
+  }
+}
+
+function addHandlers(element, column) {
+  element.onclick = (e) => sortTable(column);
+  element.onkeydown = (e) => {
+    if (e.key == 'Enter' || e.key == ' ') {
+      sortTable(column);
+      e.preventDefault();
+    }
+  };
+}
+
+function onLoad() {
+  addHandlers(document.getElementById('nameColumnHeader'), 0);
+  addHandlers(document.getElementById('sizeColumnHeader'), 1);
+  addHandlers(document.getElementById('dateColumnHeader'), 2);
+}
+
+window.addEventListener('DOMContentLoaded', onLoad);
+</script><script>let SanitizeInnerHtmlOpts;var loadTimeData;function LoadTimeData(){}(function() { 'use strict'; LoadTimeData.prototype = { set data(value) { expect(!this.data_, 'Re-setting data.'); this.data_ = value; }, createJsEvalContext() { return new JsEvalContext(this.data_); }, valueExists(id) { return id in this.data_; }, getValue(id) { expect(this.data_, 'No data. Did you remember to include strings.js?'); const value = this.data_[id]; expect(typeof value !== 'undefined', 'Could not find value for ' + id); return value; }, getString(id) { const value = this.getValue(id); expectIsType(id, value, 'string'); return /** @type {string} */ (value); }, getStringF(id, var_args) { const value = this.getString(id); if (!value) { return ''; } const args = Array.prototype.slice.call(arguments); args[0] = value; return this.substituteString.apply(this, args); }, sanitizeInnerHtml(rawString, opts) { opts = opts || {}; return parseHtmlSubset('<b>' + rawString + '</b>', opts.tags, opts.attrs) .firstChild.innerHTML; }, substituteString(label, var_args) { const varArgs = arguments; return label.replace(/\$(.|$|\n)/g, function(m) { assert(m.match(/\$[$1-9]/), 'Unescaped $ found in localized string.'); return m === '$$' ? '$' : varArgs[m[1]]; }); }, getSubstitutedStringPieces(label, var_args) { const varArgs = arguments; const pieces = (label.match(/(\$[1-9])|(([^$]|\$([^1-9]|$))+)/g) || []).map(function(p) { if (!p.match(/^\$[1-9]$/)) { assert( (p.match(/\$/g) || []).length % 2 === 0, 'Unescaped $ found in localized string.'); return {value: p.replace(/\$\$/g, '$'), arg: null}; } return {value: varArgs[p[1]], arg: p}; }); return pieces; }, getBoolean(id) { const value = this.getValue(id); expectIsType(id, value, 'boolean'); return (value); }, (value); }, overrideValues(replacements) { expect( typeof replacements === 'object', 'Replacements must be a dictionary object.'); for (const key in replacements) { this.data_[key] = replacements[key]; } } }; function expect(condition, message) { if (!condition) { console.error( 'Unexpected condition on ' + document.location.href + ': ' + message); } } function expectIsType(id, value, type) { expect( typeof value === type, '[' + value + '] (' + id + ') is not a ' + type); } expect(!loadTimeData, 'should only include this file once'); loadTimeData = new LoadTimeData; window.loadTimeData = loadTimeData;})();</script><script>loadTimeData.data = {"header":"its very secret, there only anime!","headerDateModified":"Последнее изменение","headerName":"Имя","headerSize":"Размер","language":"ru","listingParsingErrorBoxText":"Этот сервер отправляет данные в неизвестном Google Chrome формате. \u003Ca href=\"http://code.google.com/p/chromium/issues/entry\">Сообщите об ошибке\u003C/a> и включите в отчет \u003Ca href=\"LOCATION\">служебные данные\u003C/a>.","parentDirText":"[родительский каталог]","textdirection":"ltr"};</script><script>start("itsv1eds.site\anime\");</script><script>onHasParentDirectory();</script><title id="title"></title></head>
+
+<script>addRow("Death Note","Death%20Note",1,0,"0 B",1612456554,"04.02.2021, 21:35:54");</script>
+<script>addRow("Evangelion","Evangelion",1,0,"0 B",1612456558,"04.02.2021, 21:35:58");</script>
