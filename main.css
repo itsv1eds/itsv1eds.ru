@@ -1,0 +1,90 @@
+body {
+	background-color: RGB(241, 241, 241);
+	font-family: sans-serif;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h3 {
+	text-align: center;
+	margin-top: 150px;
+	font-size: 150px;
+	color: #f1f1f1;
+    font-family: 'Open Sans';
+}
+
+@media  screen and (min-width: 525px) {
+  .header-pc {
+    display: block
+  }
+  .header-mobile {
+    display: none
+  }
+}
+
+@media  screen and (max-width: 525px) {
+  .header-pc {
+    display: none
+  }
+  .header-mobile {
+    display: block
+  }
+}
+}
+}
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+a.rotate2 {
+
+    background: url (images/tg.png); /* Путь к файлу с исходным  рисунком */
+
+    display: block; /* Ссылка как блочный элемент */
+
+    width: 48px; /* Ширина рисунка в пикселах */
+
+    height: 48px; /* Высота рисунка */
+
+}
+
+a.rotate2:hover {
+
+    background-position: 0 -30px; /* Смещение фона */
+
+}

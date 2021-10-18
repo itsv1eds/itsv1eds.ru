@@ -1,0 +1,32 @@
+body {
+	background-color: RGB(241, 241, 241);
+	font-family: sans-serif;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 50px;
+}
+
+@media  screen and (min-width: 525px) {
+  .header-pc {
+    display: block
+  }
+  .header-mobile {
+    display: none
+  }
+}
+
+@media  screen and (max-width: 525px) {
+  .header-pc {
+    display: none
+  }
+  .header-mobile {
+    display: block
+  }
+}
+}
+}
