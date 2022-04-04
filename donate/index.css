@@ -292,19 +292,18 @@ body{
     }
 }
 .social-media-links{
-    height: 100vh;
-    position: absolute;
-    z-index: 2;
-    padding: 60px;
+    height: 100px;
+    z-index: 3;
+    padding: 0px;
     width: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 .social-media{
     color: white;
-    width:  21px;
+    width:  100px;
     ;
     opacity: .6;
     margin: 8px;
