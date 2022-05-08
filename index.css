@@ -188,7 +188,7 @@ body{
     opacity: 1;
     transform: rotate(90deg);
 }
-.logo img{
+.lang img{
     height: 80px;
     position: absolute;
     top: 3%;
@@ -198,7 +198,7 @@ body{
     cursor: pointer;
     transition: all .4s ease;
 }
-.logo img:hover{
+.lang img:hover{
     opacity: 1;
     transform: rotate(-45deg);
 }
