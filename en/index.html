@@ -4,21 +4,14 @@
 	<title>itsv1eds.ru</title>
 	<meta name="og:title" content="itsv1eds.ru">
 	<meta name="twitter:title" content="itsv1eds.ru">
-	<meta name="description" content="hello! itsv1eds site, and here you can see a his projects or donate him!">
-	<meta name="og:description" content="hello! itsv1eds site, and here you can see a his projects or donate him!">
-	<meta name="twitter:description" content="hello! itsv1eds site, and here you can see a his projects or donate him!">
-	<link rel="shortcut icon" href="../images/face.png" type="image/png">
+	<meta name="description" content="This is v1eds' site, here you can see projects, social links and donate.">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="shortcut icon" href="/images/face.png" type="image/png">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-	</script>
-	<script src="../js/konami.js">
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+	<script src="../js/index.js" defer></script>
 	<link href="../index.css" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js">
-	</script>
 </head>
 <body>
 	<div id="all">
@@ -31,7 +24,9 @@
 				<span class="close-first"></span> <span class="close-second"></span>
 			</div>
 			<div class="navigation-links">
-				<a data-text="Home" href="#" id="home-link">Home</a> <a data-text="Projects" href="#" id="portfolio-link">Projects</a><a data-text="Donate" href="donate">Donate</a>
+				<a href="#" id="home-link" data-i18n="nav_home">Home</a>
+				<a href="#" id="portfolio-link" data-i18n="nav_projects">Projects</a>
+				<a href="https://t.me/v1edsinfo" target="_blank" id="donate-link" data-i18n="nav_donate">Donate</a>
 			</div>
 		</div>
 		<div id="navigation-bar">
@@ -42,7 +37,11 @@
 		<div id="header">
 			<div id="particles"></div>
 			<div class="social-media-links">
-				<a href="//itsv1eds.ru/p/tg" target="_blank"><img alt="Telegram" class="social-media" height="48" src="../images/telegram.svg" width="48"></a> <a href="//itsv1eds.ru/p/vk" target="_blank"><img alt="VK" class="social-media" height="48" src="../images/vk.svg" width="48"></a> <a href="//itsv1eds.ru/p/inst" target="_blank"><img alt="Instagram" class="social-media" height="48" src="../images/instagram.svg" width="48"></a> <a href="//itsv1eds.ru/p/gh" target="_blank"><img alt="Github" class="social-media" height="48" src="../images/github.svg" width="48"></a> <a href="../donate" target="_blank"><img alt="Donate" class="social-media" height="48" src="../images/donate.svg" width="48"></a>
+				<a href="https://t.me/itsv1eds" target="_blank"><img alt="Telegram" class="social-media" height="48" src="../images/telegram.svg" width="48"></a>
+				<a href="https://vk.com/itsv1eds" target="_blank"><img alt="VK" class="social-media" height="48" src="../images/vk.svg" width="48"></a>
+				<a href="https://instagr.am/itsv1eds" target="_blank"><img alt="Instagram" class="social-media" height="48" src="../images/instagram.svg" width="48"></a>
+				<a href="https://github.com/itsv1eds" target="_blank"><img alt="Github" class="social-media" height="48" src="../images/github.svg" width="48"></a>
+				<a href="https://t.me/v1edsinfo" target="_blank" id="donate-link"><img alt="Donate" class="social-media" height="48" src="../images/donate.svg" width="48"></a>
 			</div>
 			<div class="header-content">
 				<div class="header-content-box">
@@ -50,13 +49,13 @@
 						<span class="color">itsv1eds.ru</span>
 					</div>
 					<div class="secondline">
-						im <span class="txt-rotate color" data-period="1200" data-rotate='["itsv1eds, 19 y.o", "ex-CEO of exteraGram", "playing minecraft since I was 8 years old", "idk what i want", "i make this for rofl"]'></span> <span class="slash">|</span>
+						I am <span class="txt-rotate color" data-period="1200" data-rotate='["v1eds, 20 y.o.", "founder of exteraGram", "second year student", "making random stuff"]'></span> <span class="slash">|</span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="portfolio">
-		<div id="loader"></div>
+			<div id="loader"></div>
 			<div class="portfolio-header">
 				<span class="color">My</span> Projects <span class="header-caption">Many started, <span class="color">but so few completed</span></span>
 			</div>
@@ -64,9 +63,9 @@
 				<div class="portfolio-image"><img alt="portfolio-first" src="../images/exteragram.png"></div>
 				<div class="portfolio-text">
 					<h2>exteraGram</h2>
-					<p>exteraGram is a Telegram client based on the source code of the original application with some functional changes and additional features. The interface and a set of basic features remained unchanged.</p>
+					<p>exteraGram is a Telegram client based on the source code of the original app with some functional changes and additional features. The interface and main features remain unchanged.</p>
 					<div class="button">
-						<a href="//extera.codes"><button><span class="index">install<i class="gg-arrow-right"></i></span></button></a>
+						<a href="https://exteragram.app"><button><span class="index">Install<i class="gg-arrow-right"></i></span></button></a>
 					</div>
 				</div>
 			</div>
@@ -75,9 +74,9 @@
 					<div class="portfolio-image"><img alt="Firmware for Mi Band 3" src="../images/itsv1edsos.png"></div>
 					<div class="portfolio-text">
 						<h2>itsv1edOS</h2>
-						<p>itsv1edsOS are modified files such as firmware and resources for Mi Band 3 that change your usage of the bracelet for the better.</p>
+						<p>itsv1edsOS is a set of modified files, such as firmware and resources for Mi Band 3, that improve your experience with the bracelet.</p>
 						<div class="button">
-							<a href="../projects/itsv1edOS"><button><span class="index">download<i class="gg-arrow-right"></i></span></button></a>
+							<a href="https://itsv1eds.ru/projects/itsv1edOS"><button><span class="index">Download<i class="gg-arrow-right"></i></span></button></a>
 						</div>
 					</div>
 				</div>
@@ -95,21 +94,15 @@
 		</div>
 		<div class="footer">
 			<div class="footer-text">
-				@v1edsinfo. 2020-2024 by itsv1eds.
+				@v1edsinfo. 2020-2025 by itsv1eds.
 			</div>
 		</div>
 	</div>
-	<script src="../js/jquery.min.js">
-	</script> 
-	<script src="../js/particles.js">
-	</script> 
-	<script src="../js/particles.min.js">
-	</script> 
-	<script src="../js/index.js">
-	</script> 
+	<script src="../js/particles.min.js"></script>
+	<script src="../js/index.js" defer></script>
+	<style>body { background: url('../images/bg.webp') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;}</style>
 	<script>
 	particlesJS("particles", {"particles":{"number":{"value":120,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":true,"speed":0,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.24463576890600452,"width":1.2626362266116362},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
 	</script>
-<style>body { background: url('../images/bgen.webp') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;}</style>
 </body>
 </html>

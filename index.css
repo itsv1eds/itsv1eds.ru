@@ -1349,6 +1349,13 @@ For devices with smaller width like mobile phone
 
 
 @media only screen and (max-width: 550px){
+    .social-media-links #donate-link img {
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        position: static !important;
+    }
     .header-content{
         height: 100vh;
         width: 100%;
