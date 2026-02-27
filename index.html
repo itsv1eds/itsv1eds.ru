@@ -17,7 +17,6 @@
 			<span class="color">Загрузка..</span>
 		</div>
 		
-		<!-- Навигация -->
 		<div id="navigation-content">
 			<a class="lang" href="//itsv1eds.ru/en"><img alt="logo" src="images/lang.svg" width="48" height="48"></a>
 			<div class="navigation-close">
@@ -36,7 +35,6 @@
 			</div>
 		</div>
 		
-		<!-- Заголовок -->
 		<div id="header">
 			<div id="particles"></div>
 			<div class="social-media-links">
@@ -52,13 +50,12 @@
 						<span class="color">itsv1eds.ru</span>
 					</div>
 					<div class="secondline">
-						Я <span class="txt-rotate color" data-period="1200" data-rotate='["виедс, мне 20 лет","основатель exteraGram","учусь на втором курсе","делаю разную фигню"]'></span> <span class="slash">|</span>
+						Я <span class="txt-rotate color" data-period="1200" data-rotate='["виедс, мне 21 год","основатель exteraGram","учусь на третьем курсе университета","делаю разную фигню"]'></span> <span class="slash">|</span>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<!-- Портфолио -->
 		<div id="portfolio">
 			<div class="portfolio-header">
 				<span class="color">Мои</span> Проекты <span class="header-caption">Много начатых, <span class="color">но так мало законченных</span></span>
@@ -75,6 +72,16 @@
 			</div>
 			<div id="portfolio-content">
 				<div class="portfolio portfolio-second">
+					<div class="portfolio-image"><img alt="exteraPluginsRobot" src="images/exterapluginsrobot.png"></div>
+					<div class="portfolio-text">
+						<h2>exteraPluginsRobot</h2>
+						<p>Просто бот для Telegram, написан на aiogram для моего Telegram канала: <a href="https://t.me/exteraPluginsSup" target="_blank">t.me/exteraPluginsSup</a></p>
+						<div class="button">
+							<a href="https://github.com/itsv1eds/exteraPluginsRobot" target="_blank"><button><span class="index">GitHub<i class="gg-arrow-right"></i></span></button></a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio portfolio-third">
 					<div class="portfolio-image"><img alt="Firmware for Mi Band 3" src="images/itsv1edsos.png"></div>
 					<div class="portfolio-text">
 						<h2>itsv1edOS</h2>
@@ -84,25 +91,32 @@
 						</div>
 					</div>
 				</div>
+				<div class="portfolio portfolio-fourth">
+					<div class="portfolio-image"><img alt="Pixels" src="images/pixels.png"></div>
+					<div class="portfolio-text">
+						<h2>Pixels</h2>
+						<p>Pixels - это модифицированные ресурсы, которые делают иконки на Mi Smart Band 4 пиксельными и более мультяшными.</p>
+						<div class="button">
+							<a href="projects/Pixels"><button><span class="index">Открыть<i class="gg-arrow-right"></i></span></button></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		<!-- Подвал -->
+
 		<div class="footer">
 			<div class="footer-text">
-				@v1edsinfo. 2020-2025 by itsv1eds.
+				@v1edsinfo. 2020-<span id="current-year"></span> by itsv1eds.
 			</div>
 		</div>
 	</div>
 	
-	<!-- Скрипты -->
+	
 	<script src="js/particles.min.js"></script>
 	<script src="js/index.js" defer></script>
 	
-	<!-- Стили -->
 	<style>body { background: url('images/bg.webp') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover;}</style>
 	
-	<!-- particlesJS -->
 	<script>
 	particlesJS("particles", {"particles":{"number":{"value":120,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":true,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":true,"speed":0,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.24463576890600452,"width":1.2626362266116362},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
 	</script>
